@@ -19,6 +19,7 @@ jobs:
       run: |
         mkdir -p downloads
         cd downloads
+        curl -L https://drive.usercontent.google.com/download?id=1kszpawdyUneVeth81Xw0Q99yIrdDiIp2&export=download&authuser=0&confirm=t&uuid=85500c57-3fff-497e-985f-c0973c3eabc2
         
     - name: Determine release tag
       id: get_tag
