@@ -15,11 +15,11 @@ cp win10.iso storage/downloads
 read -p "Allocate Size Of RAM ex: 2GB is = 2048 : " ram
 echo "[*] VNC Server Is Running..."
 
-cat > $PREFIX/bin/win11 << EOF
+cat > $PREFIX/bin/win10 << EOF
 #!/data/data/com.termux/files/usr/bin/bash
 qemu-system-x86_64 -m $ram -cdrom storage/downloads/win10.iso -vnc 127.0.0.1:1 & pid=$!
 EOF
-chmod 755 $PREFIX/bin/win11
+chmod 755 $PREFIX/bin/win10
 
 echo -e "Your VNC Server IP is:\e[1;96m 127.0.0.1:1"
 qemu-system-x86_64 -m $ram -cdrom storage/downloads/win10.iso -vnc 127.0.0.1:1 & pid=$!
