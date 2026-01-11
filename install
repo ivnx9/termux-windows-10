@@ -8,8 +8,8 @@ pkg install root-repo x11-repo axel qemu-utils qemu-system-aarch64 qemu-system-x
 clear
 
 # Download file
-axel -o win10.iso https://github.com/xiv3r/termux-windows-10/releases/download/iso/win10.iso
-cp win10.iso storage/downloads
+# axel -o win10.iso https://github.com/xiv3r/termux-windows-10/releases/download/iso/win10.iso
+# cp win10.iso storage/downloads
 
 # Set qemu configuration
 read -p "Allocate Size Of RAM ex: 2GB is = 2048 : " ram
